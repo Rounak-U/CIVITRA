@@ -23,6 +23,7 @@ import {
 import { DotScreenShader } from "@/components/ui/dot-shader-background"
 import { CivicVisual } from "@/components/ui/civic-visual"
 import { cn } from "@/lib/utils"
+import { NavHeader } from "@/components/nav-header"
 
 export default function Home() {
   return (
@@ -33,28 +34,7 @@ export default function Home() {
         <DotScreenShader />
       </div>
 
-      {/* Fixed Header */}
-      <header className="fixed top-0 left-0 z-50 w-full p-6 md:px-12 md:py-8 bg-black/40 backdrop-blur-xl border-b border-white/5">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-orange-500/20 via-white/5 to-green-600/20 border border-white/10 shadow-[0_0_20px_rgba(255,153,51,0.1)] transition-all group-hover:shadow-[0_0_30px_rgba(255,153,51,0.2)]">
-              <Landmark className="h-5 w-5 text-white z-10" />
-            </div>
-            <div className="flex flex-col -space-y-1">
-              <span className="text-2xl font-black tracking-tighter">
-                CIVI<span className="text-orange-500">TRA</span>
-              </span>
-              <span className="text-[10px] font-bold text-zinc-500 tracking-[0.2em] uppercase pl-0.5">Community First</span>
-            </div>
-          </div>
-          <nav className="hidden md:flex items-center gap-8 text-sm font-bold tracking-tight text-zinc-400">
-            <Link href="#how-it-works" className="hover:text-white transition-colors uppercase">How it Works</Link>
-            <Link href="#benefits" className="hover:text-white transition-colors uppercase">Benefits</Link>
-            <Link href="/login" className="px-6 py-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-white uppercase text-xs">Login</Link>
-            <Link href="/register" className="px-6 py-2 rounded-lg bg-orange-600 hover:bg-orange-500 transition-all text-white shadow-[0_0_25px_rgba(255,153,51,0.3)] hover:shadow-[0_0_35px_rgba(255,153,51,0.5)] uppercase text-xs font-black">Get Started</Link>
-          </nav>
-        </div>
-      </header>
+      <NavHeader />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-12 md:pt-40 md:pb-16 px-6">
@@ -68,7 +48,7 @@ export default function Home() {
             Smart Govt Initiative
           </div>
 
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.85] mb-10">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.85] mb-10">
             Better <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-white to-green-600">Cities</span> <br className="hidden md:block" />
             Smarter <span className="italic font-light">India.</span>
           </h1>
@@ -102,7 +82,7 @@ export default function Home() {
               <div className="h-0.5 w-12 bg-orange-500" />
               <div className="text-zinc-500 font-black tracking-widest text-xs uppercase">Platform Mission</div>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black leading-tight tracking-tighter">
+            <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tighter">
               AI-First <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-white">Civic Reporting</span> <br />
               <span className="text-green-500 underline decoration-white/20 underline-offset-8">For Digital India</span>
             </h2>
@@ -149,7 +129,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-24 text-center md:text-left">
             <div className="space-y-4">
-              <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
+              <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase leading-none">
                 DIGITAL <br className="hidden md:block" />
                 <span className="text-orange-500">WORKFLOW</span>
               </h2>

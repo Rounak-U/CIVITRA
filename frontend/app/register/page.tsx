@@ -53,8 +53,7 @@ export default function RegisterPage() {
     ] as const
 
     return (
-        <main className="h-screen bg-black text-white selection:bg-orange-500/30 overflow-hidden flex font-sans">
-
+        <main className="min-h-screen bg-black text-white selection:bg-orange-500/30 flex font-sans">
             {/* LEFT SIDE: Heritage Blueprint Pane (Hidden on Mobile) */}
             <div className="hidden lg:flex w-1/2 relative bg-black items-center justify-center overflow-hidden border-r border-white/5">
                 {/* Heritage Image Background */}
@@ -62,15 +61,13 @@ export default function RegisterPage() {
                     className="absolute inset-0 z-0 bg-cover bg-center"
                     style={{ backgroundImage: 'url("/jaigarh.jpeg")' }}
                 />
-
                 {/* Sophisticated Overlays */}
                 <div className="absolute inset-0 bg-black/60 z-0" /> {/* Darkening */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black/40 z-0" />
-
             </div>
 
             {/* RIGHT SIDE: Minimal Form Pane */}
-            <div className="flex-1 lg:w-1/2 flex flex-col relative z-20 overflow-hidden">
+            <div className="flex-1 lg:w-1/2 flex flex-col relative z-20 overflow-y-auto">
 
                 {/* Header Mobile Link */}
                 <div className="p-5 lg:p-8 flex justify-between items-center">
